@@ -16,7 +16,9 @@ import java.util.Date;
 public class DemoApplication {
 
     int cnt = 1;
-    
+    private static final String HOSTNAME = 
+        System.getenv().getOrDefault("HOSTNAME", "unknown");
+
     
     @RequestMapping("/")
     String home() {
@@ -33,7 +35,7 @@ public class DemoApplication {
       String stringNow = simpleDateFormat.format(new Date());
 
         System.out.println("hello: " + cnt);
-        return "Hello " + cnt++ + " " + stringNow;
+        return "Hello " + cnt++ + " " + stringNow + " on " + HOSTNAME;
     }
 
     public static void main(String[] args) {
