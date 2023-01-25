@@ -34,7 +34,7 @@ public class DemoApplication {
       simpleDateFormat = new SimpleDateFormat(pattern);
       String stringNow = simpleDateFormat.format(new Date());
 
-        System.out.println("hello: " + cnt);
+        System.out.println("Hello: " + cnt);
         return "Hello " + cnt++ + " " + stringNow + " on " + HOSTNAME;
     }
 
