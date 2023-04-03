@@ -4,11 +4,11 @@
 ```
 mvn package
 
-java -jar target/demo-0.0.1-SNAPSHOT.jar
+java -jar target/java-springboot-hello-docker-0.0.1-SNAPSHOT.jar
 
 curl localhost:8080
 
-Hello 1 12-23-2022 12:25:09 on unknown
+Bonjour 1 4-03-2023 12:31:31 on unknown%
 ```
 
 ```
@@ -18,7 +18,7 @@ docker run -i --rm -p 8080:8080 java-springboot-hello-docker
 
 curl localhost:8080
 
-Hello 1 12-23-2022 05:26:04 on fdfd462133ed
+Bonjour 1 4-03-2023 04:31:59 on cafb6894e2e2%
 ```
 
 ```
