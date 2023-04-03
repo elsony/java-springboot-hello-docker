@@ -36,7 +36,7 @@ public class DemoApplication {
 
       System.out.println("Bonjour: " + cnt);
 
-      return "2 Bonjour " + cnt++ + " " + stringNow + " on " + HOSTNAME;
+      return "Bonjour " + cnt++ + " " + stringNow + " on " + HOSTNAME;
     }
 
     public static void main(String[] args) {
